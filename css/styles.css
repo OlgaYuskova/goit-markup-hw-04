@@ -223,10 +223,11 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 padding: 120px 0;
 }
 
-.features .container {
+.features {
 display: flex;
 justify-content: center;
 align-items: center;
+background-color: #f4f4fd;
 height: 112px;
 border-radius: 4px;
 margin-bottom: 8px;
@@ -344,6 +345,11 @@ padding: 120px 0;
 fill: var(--icon);
 }
 
+.team {
+    padding: 32px 0;
+
+}
+
 .our-team {
 font-size: 36px;
 color: var(--main-color);
@@ -357,6 +363,7 @@ margin-bottom: 72px;
 .our-team-list {
 display: flex;
 gap: 24px;
+align-items: center;
 }
 
 .personal-list{
@@ -568,14 +575,16 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 
 }
 
-.close-btn:hover, .close-btn:focus {
+.close-btn:hover, 
+.close-btn:focus {
     background-color: #404bbf;
     border: none;
-    fill: #FFFFFF;
+    color: #FFFFFF;
 }
 
-.icon-close-btn{
+.icon-close-btn {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: currentColor;
 }
 
 /*!----------------------------PORTFOLIO------------------------------- */
@@ -633,7 +642,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-link-prtfl{
-position: relative;
+ position: relative;
 overflow: hidden;
 }
 
@@ -644,6 +653,7 @@ overflow: hidden;
 
 .main-portfolio-link {
     display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-portfolio-link:hover,
