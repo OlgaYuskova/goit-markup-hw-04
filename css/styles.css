@@ -257,8 +257,14 @@ width: 264px;
 }
 
 .icon-feat {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 112px;
 padding: 24px 100px;
 background-color: var(--footer-color);
+border-radius: 4px;
+margin-bottom: 8px;
 }
 
 .titlle-list {
@@ -393,7 +399,7 @@ letter-spacing: 0.02em;
 }
 
 .person {
-padding: 32px 16px;
+padding: 32px 0px;
 
 }
 
@@ -557,7 +563,7 @@ display: inline-block;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn{
+.close-btn {
 position: absolute;
 display: flex;
 top: 24px;
@@ -578,12 +584,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 .close-btn:hover, .close-btn:focus {
 background-color: #404bbf;
 border: none;
-fill: #FFFFFF;
+color: #FFFFFF;
 }
 
+
 .icon-close-btn {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: currentColor;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+fill: currentColor;
 }
 
 /*!----------------------------PORTFOLIO------------------------------- */
@@ -645,7 +652,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 overflow: hidden;
 }
 
-.main-link-prtfl:hover .overlay {
+.main-link-prtfl:hover .overlay, .main-link-prtfl:focus .overlay {
     transform: translateY(0);
     background-color: var(--brand-color);
 }
