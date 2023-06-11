@@ -664,7 +664,7 @@ transform: translateY(0%);
 background-color: var(--brand-color);
 }
 
-..main-link-prtfl:focus .overlay{
+.main-link-prtfl:focus .overlay{
 transform: translateY(0%);
 background-color: var(--brand-color);
 }
