@@ -659,7 +659,8 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 overflow: hidden;
 }
 
-.main-link-prtfl:hover .overlay{
+.main-link-prtfl:hover .overlay,
+.main-link-prtfl:focus .overlay {
 transform: translateY(0%);
 background-color: var(--brand-color);
 }
